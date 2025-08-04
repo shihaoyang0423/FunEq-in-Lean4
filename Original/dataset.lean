@@ -1,7 +1,7 @@
 import data.real.basic
 
-theorem simple_funeq_1 
-(f : ℝ → ℝ) 
+theorem simple_funeq_1
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = 3) :
 f(2) = 3 :=
 begin
@@ -9,8 +9,8 @@ begin
 end
 
 theorem simple_funeq_2
-(f : ℝ → ℝ) 
-(h₀ : f(0) = 0) 
+(f : ℝ → ℝ)
+(h₀ : f(0) = 0)
 (h₁ : ∀ x : ℝ, f(x + 1) = f(x) + 2) :
 f(1) = 2 :=
 begin
@@ -18,7 +18,7 @@ begin
 end
 
 theorem simple_funeq_3
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) + 3 = 4 * x) :
 f(1) = 1 :=
 begin
@@ -26,8 +26,8 @@ begin
 end
 
 theorem simple_funeq_4
-(f : ℝ → ℝ) 
-(h₀ : f(-1) = -1) 
+(f : ℝ → ℝ)
+(h₀ : f(-1) = -1)
 (h₁ : ∀ x : ℝ, f(x) + 2 * f(-x) = 3 * x) :
 f(1) = 5 :=
 begin
@@ -35,15 +35,15 @@ begin
 end
 
 theorem simple_funeq_5
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = x^2) :
 f(3) = 9 :=
 begin
   sorry
 end
 
-theorem simple_funeq_6 
-(f : ℝ → ℝ) 
+theorem simple_funeq_6
+(f : ℝ → ℝ)
 (h : ∀ x y : ℝ, f(x + y) = f(x) + f(y)) :
 f(0) = 0 :=
 begin
@@ -53,7 +53,7 @@ end
 theorem simple_funeq_7
 (f : ℝ → ℝ)
 (a : ℝ)
-(h₀ : f(0) = 3) 
+(h₀ : f(0) = 3)
 (h₁ : ∀ x : ℝ, f(x) = x + a) :
 a = 3 :=
 begin
@@ -61,15 +61,15 @@ begin
 end
 
 theorem simple_funeq_8
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = x^2 - 2 * x + 1) :
 ∀ x : ℝ, f(x) = (x - 1)^2 :=
 begin
   sorry
 end
 
-theorem simple_funeq_9 
-(f : ℝ → ℝ) 
+theorem simple_funeq_9
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = x * (x + 1)) :
 ∀ x : ℝ, f(x) = x^2 + x :=
 begin
@@ -77,7 +77,7 @@ begin
 end
 
 theorem simple_funeq_10
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = 3 * x - 4) :
 ∀ x : ℝ, f(2 * x) = 6 * x - 4 :=
 begin
@@ -85,7 +85,7 @@ begin
 end
 
 theorem simple_funeq_11
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = x^3) :
 ∀ x : ℝ, f(-x) = -f(x) :=
 begin
@@ -93,7 +93,7 @@ begin
 end
 
 theorem simple_funeq_12
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = x^3 - x) :
 ∀ x : ℝ, f(-x) = -f(x) :=
 begin
@@ -117,7 +117,7 @@ begin
 end
 
 theorem simple_funeq_15
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x : ℝ, f(x) = 7 - x) :
 ∀ x : ℝ, f(f(x)) = x :=
 begin
@@ -125,7 +125,7 @@ begin
 end
 
 theorem simple_funeq_16
-(f : ℝ → ℝ) 
+(f : ℝ → ℝ)
 (h : ∀ x y : ℝ, f(x * y) = f(x) * f(y)) :
 f(1) = 0 ∨ f(1) = 1 :=
 begin
@@ -300,7 +300,7 @@ end
 
 theorem imo_2021_a8
   (f : ℝ → ℝ)
-  (h : ∀ a b c : ℝ, (f(a) - f(b)) * (f(b) - f(c)) * (f(c) - f(a)) = 
+  (h : ∀ a b c : ℝ, (f(a) - f(b)) * (f(b) - f(c)) * (f(c) - f(a)) =
         f(a * b^2 + b * c^2 + c * a^2) - f(a^2 * b + b^2 * c + c^2 * a)) :
   ∃ (α : ℝ) (β : ℝ), (α = -1 ∨ α = 0 ∨ α = 1) ∧ ((∀ x : ℝ, f x = α * x + β) ∨ (∀ x : ℝ, f x = α * x^3 + β)) :=
 begin
@@ -424,7 +424,7 @@ end
 theorem imo_2013_a5
   (f : ℕ → ℕ)
   (h : ∀ n : ℕ, f (f (f (n))) = f (n + 1) + 1) :
-  (∀ n : ℕ, f n = n + 1) ∨ 
+  (∀ n : ℕ, f n = n + 1) ∨
   ((∀ n : ℕ, n % 4 = 0 ∨ n % 4 = 2 → f n = n + 1) ∧
   (∀ n : ℕ, n % 4 = 1 → f n = n + 5) ∧
   (∀ n : ℕ, n % 4 = 3 → f n = n - 3)) :=
@@ -436,7 +436,7 @@ theorem imo_2012_a1
   (f : ℤ → ℤ)
   (h : ∀ a b c : ℤ, a + b + c = 0 → f (a)^2 + f (b)^2 + f (c)^2 = 2 * (f (a) * f (b) + f (b) * f (c) + f (c) * f (a))) :
   (∀ x : ℤ, f x = 0) ∨
-  (∀ k : ℤ, k ≠ 0 → ((∀ x : ℤ, f x = k * x^2) ∨ 
+  (∀ k : ℤ, k ≠ 0 → ((∀ x : ℤ, f x = k * x^2) ∨
              (∀ x : ℤ, (even x → f x = 0) ∧ (odd x → f x = k)) ∨
              (∀ x : ℤ, (x % 4 = 0 → f x = 0) ∧ (x % 4 = 1 → f x = k) ∧ (x % 4 = 2 → f x = 4 * k)))) :=
 begin
@@ -496,7 +496,7 @@ end
 theorem imo_2008_a1
   (f : ℝ → ℝ)
   (h₀ : ∀ x, 0 < x → 0 < f x)
-  (h : ∀ p q r s : ℝ, ((0 < p ∧ 0 < q ∧ 0 < r ∧ 0 < s) ∧ p * q = r * s) → 
+  (h : ∀ p q r s : ℝ, ((0 < p ∧ 0 < q ∧ 0 < r ∧ 0 < s) ∧ p * q = r * s) →
       (f (p)^2 + f (q)^2) / (f (r^2) + f (s^2)) = (p^2 + q^2) / (r^2 + s^2)) :
   (∀ x : ℝ, (0 < x) → f x = x) ∨ (∀ x : ℝ, (0 < x) → f x = 1/x) :=
 begin

@@ -1,3 +1,7 @@
 *.olean
 /_target
 /leanpkg.path
+/.lake
+/build
+lake-manifest.json
+.DS_Store

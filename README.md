@@ -1,6 +1,6 @@
 # FunEq
 
-FunEq is a benchmark dataset for evaluating automated theorem proving (ATP) systems, specifically targeting the domain of functional equations. It provides a curated collection of problems formalized in the Lean 3 theorem prover, including problems from the International Mathematical Olympiad (IMO).
+FunEq is a benchmark dataset for evaluating automated theorem proving (ATP) systems, specifically targeting the domain of functional equations. It provides a curated collection of problems formalized in the Lean 4 theorem prover, including problems from the International Mathematical Olympiad (IMO).
 
 ## Dataset Structure
 
@@ -24,6 +24,5 @@ The problems in FunEq are presented in a format suitable for the Lean theorem pr
 Run the following commands:
 
 ```bash
-leanpkg configure
-leanproject get-mathlib-cache
-leanproject build
+lake exe cache get
+lake build
